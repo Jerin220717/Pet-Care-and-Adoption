@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Pet Care</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bulma.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+  <!-- <nav class="navbar">
+    <div class="container">
+        <h1 class="logo">Pet Care and Adoption</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Adoption</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav> -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item nav-logo-name"  href="/">
+        PetCare
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="narvar-end" class="navbar-end">
+      <div class="navbar-start">
+        <a href="/" class="navbar-item">
+          Home
+        </a>
+        <a href="/adoptionlist" class="navbar-item">
+          Adoption List
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Options
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a href="/about" class="navbar-item">
+              About
+            </a>
+            <a href="/pets" class="navbar-item is-selected">
+              Pets
+            </a>
+            <a href="/contact" class="navbar-item">
+              Contact
+            </a>
+          </div>
+        <a href="/adoption" class="navbar-item">
+          Adopt
+        </a>
+  
+        
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <!-- <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+{% block content %}
+{% endblock %}
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Pet Care and Adoption</p>
+    </div>
+</footer>
+  </body>
+</html>
+

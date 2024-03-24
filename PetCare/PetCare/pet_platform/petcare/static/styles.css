@@ -1,0 +1,107 @@
+Reset styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+/* .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+} */
+
+/* Hero section styles */
+
+.nav-logo-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.hero {
+    /* background-color: #f4f4f4; */
+    background: url('https://img.freepik.com/free-vector/cute-playful-footprint-pattern-background-fauna-fun_1017-44713.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711065600&semt=ais');
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Body section styles */
+.body {
+    padding: 50px 0;
+}
+
+.body h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.body p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.tip-content {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 40vw;
+    margin-inline: auto;
+    color: #333;
+    padding: 2rem;
+}

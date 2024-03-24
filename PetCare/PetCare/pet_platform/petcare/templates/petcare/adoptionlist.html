@@ -1,0 +1,26 @@
+{%extends "index.html" %}
+{% block content %}
+<h1 style="font-size: 3rem; font-weight: bold;text-align: center; margin: 2rem; text-decoration: underline;">Adoption List</h1>
+<ul style="width: 80vw;margin-inline: auto; min-height: 60vh;">
+    <li style="display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 1rem;border-bottom: 1px solid #333;">
+    <b>Name</b>
+    <b>Pet Name</b>
+    <b>Email</b>
+    </li>
+    {% for entry in adoptions %}
+    <li style="display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 1rem;">
+        <div style="font-weight: bold;">
+            {{entry.firstName}} 
+            {{entry.lastName}}
+        </div>
+        <div>
+            {{entry.petType}}
+        </div>
+        <div>
+            {{entry.email}}
+        </div>
+        
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
